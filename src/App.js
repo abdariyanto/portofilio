@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
@@ -56,9 +56,7 @@ function App() {
         <Contact />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
