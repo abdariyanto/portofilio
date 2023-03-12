@@ -1,5 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import Capitalize from "../utils/Capitalize";
 
 const container = {
   hidden: {},
@@ -19,18 +20,18 @@ const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
   bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
+
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-          tempore! Nihil culpa assumenda voluptatem quis, voluptatum et iure
-          saepe labore corrupti, est distinctio quam dicta dolorem ipsa. Dolor,
-          perspiciatis quis.
-        </p>
+        <p className="text-2xl font-playfair">{Capitalize(title)}</p>
+        <p className="mt-7">Website Development for {Capitalize(title)}</p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img
+        src={`../assets/${projectTitle}.jpg`}
+        alt={projectTitle}
+        className="max-w-[400px]"
+      />
     </motion.div>
   );
 };
@@ -81,17 +82,9 @@ const Projects = () => {
           >
             BEATUFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <Project title="unilever" />
+          <Project title="bct" />
 
-          {/* row2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
-
-          {/* row3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
           <div
             className="flex justify-center text-center items-center p-10 bg-red
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

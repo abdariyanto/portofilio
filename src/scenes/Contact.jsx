@@ -1,8 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Contact = () => {
+  const [disabled, setDisabled] = useState(false);
   const {
     register,
     trigger,
@@ -10,6 +12,11 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
+    setDisabled(true);
+
+    setTimeout(() => {
+      setDisabled(false);
+    }, 3000);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -126,6 +133,7 @@ const Contact = () => {
             <button
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
+              disabled={disabled}
             >
               SEND ME A MESSAGE
             </button>

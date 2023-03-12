@@ -23,10 +23,7 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient />
-          <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            consequatur nesciunt architecto libero, magni molestias officiis.
-          </p>
+          <p className="mt-10">Projects that have already been made</p>
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
@@ -63,13 +60,15 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl">Experience</p>
+              <p className="font-playfair font-semibold text-3xl">
+                HTML ,CSS dan Javascript
+              </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-            nostrum accusamus sed labore. Quod sunt exercitationem vitae .
+            Mastering HTML, CSS, and JavaScript to build attractive and
+            functional websites.
           </p>
         </motion.div>
 
@@ -88,13 +87,15 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl">Innovative</p>
+              <p className="font-playfair font-semibold text-3xl">
+                React Js ,Node Js dan Codeigniter
+              </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-            nostrum accusamus sed labore. Quod sunt exercitationem vitae .
+            Skilled in using various popular web frameworks such as React Js,
+            Node Js and CodeIgniter.
           </p>
         </motion.div>
 
@@ -114,14 +115,13 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl">
-                Imaginative
+                Web Responsive
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-            nostrum accusamus sed labore. Quod sunt exercitationem vitae .
+            Able to create responsive and mobile-friendly websites.
           </p>
         </motion.div>
       </div>
