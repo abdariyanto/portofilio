@@ -23,7 +23,7 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient />
-          <p className="mt-10">Projects that have already been made</p>
+          {/* <p className="mt-10">Projects that have already been made</p> */}
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (

@@ -57,10 +57,7 @@ const Projects = () => {
           <LineGradient width="w-1-3" />
           <div className="flex justify-center mt-5"></div>
         </div>
-        <p className="mt-5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nostrum
-          accusamus sed labore. Quod sunt exercitationem vitae .
-        </p>
+        <p className="mt-5">Projects that have already been made</p>
       </motion.div>
 
       {/* Project */}
