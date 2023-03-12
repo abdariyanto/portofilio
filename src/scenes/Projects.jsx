@@ -83,7 +83,6 @@ const Projects = () => {
             BEATUFUL USER INTERFACES
           </div>
           <Project title="unilever" />
-          <Project title="bct" />
 
           <div
             className="flex justify-center text-center items-center p-10 bg-red
